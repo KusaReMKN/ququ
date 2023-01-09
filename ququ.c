@@ -40,7 +40,7 @@ main(int argc, char *argv[])
 
 		if (fp != stdin)
 			fclose(fp);
-	} while (*++argv);
+	} while (++argv, --argc > 0);
 
 	return 0;
 }
