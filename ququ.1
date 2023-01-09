@@ -1,0 +1,50 @@
+.\"
+.Dd
+.Dt QUQU 1
+.Os
+.
+.Sh NAME
+.Nm ququ
+.Nd Shift each characeter
+.
+.Sh SYNOPSIS
+.Nm
+.Op Fl n Ar number
+.Op Ar
+.
+.Sh DESCRIPTION
+The
+.Nm
+utility read files sequentially,
+right-shifts each character by specified bits,
+and output them to standard output.
+The
+.Ar file
+operands are processed in command-line order.
+If
+.Ar file
+is a single dash
+.Pq Ql Fl
+or absent,
+.Nm
+reads from the standard input.
+.Pp
+The following option is available:
+.Bl -tag -width indent
+.It Fl n Ar number
+Specify the number of bits to shift.
+Default value is
+.Ql 1 .
+Positive values shift right; negative values shift left.
+.El
+.
+.Sh EXIT STATUS
+.Ex -std
+.
+.Sh COPYRIGHT
+Copyright \(co 2023
+.An KusaReMKN .
+.
+.Sh BUGS
+No one knows why this program was named
+.Nm .
